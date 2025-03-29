@@ -1,0 +1,70 @@
+/* Congratulations.css */
+
+/* Ensure the container fills the entire screen */
+.congratulations-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  background-color: #f0f8ff; /* Light background color */
+}
+
+/* Style the message */
+.congratulations-message {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4caf50; /* Green for the message */
+  margin-bottom: 20px;
+}
+
+/* Container for the leaf icons */
+.leaves-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style individual leaves */
+.leaf {
+  font-size: 3rem;
+  color: #4caf50; /* Same green for consistency */
+  animation: leafAnimation 3s ease-in-out infinite;
+}
+
+/* Animation for leaf movement */
+@keyframes leafAnimation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(20deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(10px) rotate(-20deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+/* Slightly different animations for each leaf */
+.leaf-1 {
+  animation-delay: 0s;
+}
+
+.leaf-2 {
+  animation-delay: 0.5s;
+}
+
+.leaf-3 {
+  animation-delay: 1s;
+}
+
+.leaf-4 {
+  animation-delay: 1.5s;
+}
