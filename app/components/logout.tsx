@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import ProtectedRoute from '../components/ProtectedRoute';
 
 const Logout = () => {
   const [loading, setLoading] = useState(false);
